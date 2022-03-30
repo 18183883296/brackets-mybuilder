@@ -1,0 +1,13 @@
+[
+    {
+        "code": "protractor",
+        "name": "protractor",
+        "env": "webdriver-manager start",
+        "run": "protractor $FILE"
+    },
+    {
+        "code": "jasmine",
+        "name": "jasmine",
+        "run": "karma start"
+    }
+]

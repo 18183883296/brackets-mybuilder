@@ -1,0 +1,61 @@
+[
+    {
+        "name": "Go",
+        "run": "go run $FILE",
+        "compile": "go build $FILE",
+        "runCompiled": "start cmd /C \"$BASE_FILE &echo. &pause\""
+    },
+    {
+        "name": "C",
+        "run": "gcc -fexec-charset=utf-8 $FILE -std=c++11 -o $PATH$BASE_FILE &&$PATH$BASE_FILE",
+        "compile": "gcc -fexec-charset=cp936 $FILE -std=c++11 -o $PATH$BASE_FILE",
+        "runCompiled": "start cmd /C \"$BASE_FILE &&echo. &pause\""
+    },
+    {
+        "name": "C++",
+        "run": "g++ -fexec-charset=utf-8 $FILE -std=c++11 -o $PATH$BASE_FILE &&$PATH$BASE_FILE",
+        "compile": "g++ -fexec-charset=cp936 $FILE -std=c++11 -o $PATH$BASE_FILE",
+        "runCompiled": "start cmd /C \"$BASE_FILE &&echo. &pause\""
+    },
+    {
+        "name": "Scala",
+        "run": "scala $FILE",
+        "compile": "scalac $FILE",
+        "runCompiled": "start cmd /C \"scala $BASE_FILE &echo. &pause\""
+    },
+    {
+        "name": "C#",
+        "run": "csc /out:$PATH/$BASE_FILE.exe $FILE && start $BASE_FILE.exe /d $PATH $BASE_FILE.exe",
+        "compile": "csc /out:$PATH/$BASE_FILE.exe $FILE",
+        "runCompiled": "csc /t:winexe /r:System.Windows.Forms.dll;System.Drawing.dll /out:$PATH/$BASE_FILE.exe $FILE && start $BASE_FILE.exe /d $PATH"
+    },
+    {
+        "name": "Java",
+        "run": "(if exist \"$BASE_FILE.class\" (del \"$BASE_FILE.class\")) &java $FILE",
+        "compile": "javac $FILE",
+        "runCompiled": "start cmd /C \"java $BASE_FILE &echo. &pause\""
+    },
+    {
+        "name": "Python",
+        "run": "black $FILE &&python $FILE",
+        "compile": "start cmd /C \"python $FILE &echo. &pause\""
+    },
+    {
+        "name": "JavaScript",
+        "run": "node --harmony $FILE"
+    },
+    {
+        "name": "Ruby",
+        "run": "ruby $FILE",
+        "compile": "start cmd /C \"ruby $FILE &echo. &pause\""
+    },
+    {
+        "name": "PHP",
+        "run": "php $FILE",
+        "compile": "start cmd /C \"php $FILE &echo. &pause\""
+    },
+    {
+        "name": "Bash",
+        "run": "sh $FILE"
+    }
+]

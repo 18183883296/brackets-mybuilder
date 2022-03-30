@@ -1,0 +1,22 @@
+{
+    "name": "brackets-script-builder-and-framework-launcher",
+    "title": "Brackets Script Builder and framework launcher",
+    "description": "Allows to run programs contained in one file (can be used for Scala, Java, Python, Ruby, Node, C++, Bash) from Brackets and display results in panel. It is possible to create own build systems via 'Edit > Script Builder Configuration' menu item and editing opened JSON file (you need to restart Brackets afterwards). Based on Brackets Builder (http://github.com/Vhornets/brackets-builder).  I add to the original one a framework management and also an OS detection for execution.  Add frameworks over the UI  Keyboard shortcuts:  * Alt-F12 to show the dialog for framework choice / add.   * Alt-F8 to launch the environment. <br /> * Alt-F1 to run current file as a script.   * F10 to compile current file.   * F11 to run compilation result.   ",
+    "homepage": "https://github.com/jackTheRipper/brackets-script-builder",
+    "version": "0.1.0",
+    "author": "Jean Baudin <baudin.jean@gmail.com>",
+    "files": [
+        "main.js",
+        "domain.js",
+        "brackets-builder.css",
+        "brackets-builder-panel.html",
+        "brackets-builder-template-input.html",
+        "brackets-builder-template-output.html",
+        "brackets-builder-template-popup.html",
+        "README.md",
+        "builder.json",
+        "framework.json"
+    ],
+    "contributors": ["jackTheRipper"],
+    "keywords": ["builder", "protractor", "nodejs"]
+}

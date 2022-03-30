@@ -1,0 +1,38 @@
+<div class="project-settings-dialog modal">
+    <div class="modal-header">
+        <h1 class="dialog-title">Framework panel</h1>
+    </div>
+    <div class="modal-body">
+        <div id="choose-framework" class="dialog-message">
+            <label for="framework">
+                Choose a framework :
+                <select id="framework-list" name="framework">
+                    <option value="">frameworks</option>
+                </select>
+            </label>
+        </div>
+        <div id="add-framework" class="dialog-message hidden">
+            <label>
+                Add a code name :
+                <input required id="code" type="text" value="" placeholder="Enter a code name without space" />
+            </label>
+            <label>
+                Add a name :
+                <input required id="name" type="text" value="" placeholder="Enter a name human compliant" />
+            </label>
+            <label>
+                Add a command line to launch environment :
+                <input id="env" type="text" value="" placeholder="enter the command line" />
+            </label>
+            <label>
+                Add a command line to run the framework :
+                <input required id="run" type="text" value="" placeholder="enter the command line" />
+            </label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="cancel" class="dialog-button btn-danger">cancel</button>
+        <button id="confirm" class="dialog-button btn">confirm</button>
+        <button id="add" class="dialog-button btn">add a framework</button>
+    </div>
+</div>
