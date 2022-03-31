@@ -289,11 +289,11 @@ define(function (require, exports, module) {
 
         Menus.addMenu("Build", menuId, Menus.AFTER, Menus.AppMenuBar.NAVIGATE_MENU);
         var menu = Menus.getMenu(menuId);
-        menu.addMenuItem("builder.chooseFramework", "Alt-F12", Menus.BEFORE, 'builder.chooseFramework');
-        menu.addMenuItem("builder.runEnvironment", "Alt-F8", Menus.BEFORE, 'builder.runEnvironment');
-        menu.addMenuItem("builder.run", "Alt-F1", Menus.BEFORE, 'builder.run');
-        menu.addMenuItem("builder.compile", "F10", Menus.BEFORE, 'builder.compile');
-        menu.addMenuItem("builder.runCompiled", "F11", Menus.BEFORE, 'builder.runCompiled');
+        menu.addMenuItem("builder.chooseFramework", "F4", Menus.BEFORE, 'builder.chooseFramework');
+        menu.addMenuItem("builder.runEnvironment", "Ctrl-F4", Menus.BEFORE, 'builder.runEnvironment');
+        menu.addMenuItem("builder.run", "Ctrl-I", Menus.BEFORE, 'builder.run');
+        menu.addMenuItem("builder.compile", "Ctrl-Shift-I", Menus.BEFORE, 'builder.compile');
+        menu.addMenuItem("builder.runCompiled", "Ctrl-Alt-I", Menus.BEFORE, 'builder.runCompiled');
 
         // Add menu item to edit .json file
         var menu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU);

@@ -10,11 +10,11 @@ It is possible to create own build systems via 'Edit > Script Builder Configurat
 Based on Brackets Script Builder (https://github.com/ghaxx/brackets-script-builder). 
 
 Keyboard shortcuts: 
- * Alt-F12 to show the dialog for framework choice / add.
- * Alt-F8 to launch the environment.
- * Alt-F1 to run current file as a script. 
- * F10 to compile current file. 
- * F11 to run compilation result. 
+ * F4 to show the dialog for framework choice / add.
+ * Ctrl+F4 to launch the environment.
+ * Ctrl+I to run current file as a script. 
+ * Ctrl+Shift+I to compile current file. 
+ * Ctrl+Alt+I to run compilation result. 
  
 
 ***
