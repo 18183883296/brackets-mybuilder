@@ -45,3 +45,6 @@ Keyboard shortcuts:
 - $FILE = The current files name (including extension). 当前文件名(包括扩展名)
 - $BASE_FILE = The current files name (excluding extension). 当前文件名(不包括扩展名)
 - $FULL_FILE = The current files full path (including extension). 当前文件的完整路径(包括扩展名)
+
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/caarlos0/starcharts.svg?variant=adaptive)](https://starchart.cc/caarlos0/starcharts)
